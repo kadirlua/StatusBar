@@ -1,0 +1,75 @@
+<ActionTemplates>
+	<Action>
+      <Name>StatusBar.GetPaneText</Name>
+      <Description>Gets the StatusBar object's text.</Description>
+      <ReturnValueType>string</ReturnValueType>
+      <Arguments>
+         <Arg>
+            <Name>ObjectName</Name>
+            <Description>The name of the object.</Description>
+            <Type>string</Type>
+            <Default/>
+            <Required>1</Required>
+            <EasyMode>
+               <Default></Default>
+               <DataType>pluginobject</DataType>
+               <Constraints>IR_STATUSBAR_OBJECT</Constraints>
+            </EasyMode>
+         </Arg>
+        <Arg>
+          <Name>Index</Name>
+          <Description>The index of the pane.</Description>
+          <Type>number</Type>
+          <Default/>
+          <Required>1</Required>
+          <EasyMode>
+            <Default>0</Default>
+            <DataType>number</DataType>
+            <Constraints>none</Constraints>
+          </EasyMode>
+        </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>StatusBar.SetPaneText</Name>
+      <Description>Sets the current text of a statusbar object.</Description>
+      <Arguments>
+         <Arg>
+            <Name>ObjectName</Name>
+            <Description>The name of the object.</Description>
+            <Type>string</Type>
+            <Default/>
+            <Required>1</Required>
+            <EasyMode>
+               <Default></Default>
+               <DataType>pluginobject</DataType>
+               <Constraints>IR_STATUSBAR_OBJECT</Constraints>
+            </EasyMode>
+         </Arg>
+        <Arg>
+          <Name>Index</Name>
+          <Description>The index of the pane.</Description>
+          <Type>number</Type>
+          <Default/>
+          <Required>1</Required>
+          <EasyMode>
+            <Default>0</Default>
+            <DataType>number</DataType>
+            <Constraints>none</Constraints>
+          </EasyMode>
+        </Arg>
+		     <Arg>
+            <Name>Text</Name>
+            <Description>The text of the object.</Description>
+            <Type>string</Type>
+            <Default/>
+            <Required>1</Required>
+            <EasyMode>
+               <Default>"New Text"</Default>
+               <DataType>string</DataType>
+               <Constraints>none</Constraints>
+            </EasyMode>
+         </Arg>
+      </Arguments>
+   </Action>
+</ActionTemplates>
