@@ -11,9 +11,6 @@
 #define new DEBUG_NEW
 #endif
 
-extern "C" wchar_t* __ODC__(const char *);
-extern "C" char* __ODA__(const char *);
-
 char szInformation[] = "StatusBar Object for AutoPlay Media Studio\r\nCreated by Kadir Altýndað\r\n"
 					   "Copyright © 2013";
 char szObjectName[] = "StatusBar";
@@ -145,10 +142,7 @@ bool irPlg_ShowHelpForPlugin(char* lpszPluginPath, HWND hParentWnd)
 
 bool irPlg_ValidateLicense(char* lpszLicenseInfo)
 {
-	if (strcmp(__ODA__("HJPXXXXX]lpp|&'.77FU[\\ko{%+/28FGQUdm{#*9\?DFOUW]lxy*45DSU^fp \"\"*,4CCEQT[g"),lpszLicenseInfo) == 0)
 	return TRUE;
-	else
-	return FALSE;
 }
 
 int irPlg_GetLuaVersion(char* szBuffer, int* pnBufferSize)
